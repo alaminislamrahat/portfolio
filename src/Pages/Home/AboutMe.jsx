@@ -24,7 +24,7 @@ const AboutMe = () => {
         </div>
 
         {/* Solar System Section */}
-        <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] pt-8">
+        <div className="relative w-[200px] h-[200px] md:w-[400px] md:h-[400px] pt-8">
           {/* Center (Sun) */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="rounded-full w-20 h-20 bg-yellow-400 flex items-center justify-center text-black font-bold shadow-xl">
