@@ -5,7 +5,7 @@ const Card = ({ project }) => {
   const { image, title, description, githubLink1, githubLink2, liveLink } = project;
 
   return (
-    <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-transparent text-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full">
+    <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg hover:shadow-orange-400 bg-gray-900 bg-opacity-35 text-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full">
       {/* Image Section */}
       <img
         src={image}

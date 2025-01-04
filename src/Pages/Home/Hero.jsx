@@ -62,7 +62,7 @@ const Hero = () => {
                         Contact Me
                     </button>
                     <button className="px-8 py-3 bg-transparent border border-white hover:bg-white hover:text-gray-900 text-white font-medium rounded-md shadow-lg transition-all">
-                        View Portfolio
+                        Download CV
                     </button>
                 </div>
             </motion.div>
