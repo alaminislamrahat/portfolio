@@ -8,7 +8,7 @@ const AboutMe = () => {
       <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
 
         {/* Intro Section */}
-        <div className="text-center md:text-left mb-16 md:w-1/2">
+        <div className="text-center md:text-left mb-16 md:w-1/2 md:mr-32">
           {/* <h1 className="text-4xl font-bold text-yellow-400 mb-4">About Me</h1> */}
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">
             Hi, I'm <span className="text-blue-400 font-bold">Al Amin Islam Rahat</span>, a passionate Frontend Web Developer.

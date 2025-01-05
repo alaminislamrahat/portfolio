@@ -1,6 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     // Define Framer Motion variants
@@ -79,9 +80,9 @@ const Hero = () => {
                 </div>
 
                 <div className="flex space-x-4">
-                    <button className="px-8 py-3 bg-orange-500 hover:bg-orange-800 text-white font-medium rounded-md shadow-lg transition-all">
+                    <Link to="/contact" className="px-8 py-3 bg-orange-500 hover:bg-orange-800 text-white font-medium rounded-md shadow-lg transition-all">
                         Contact Me
-                    </button>
+                    </Link>
                     <button className="px-8 py-3 bg-transparent border border-white hover:bg-white hover:text-gray-900 text-white font-medium rounded-md shadow-lg transition-all">
                         Download CV
                     </button>
