@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Hero = () => {
     // Define Framer Motion variants
@@ -22,41 +23,61 @@ const Hero = () => {
                 animate="visible"
                 className="hero-content text-center md:text-left flex flex-col items-center md:items-start"
             >
-                <h1 className="text-4xl font-bold">I am Al Amin Islam Rahat,A Proffessional</h1>
+                <h1 className="text-4xl font-bold">
+                    I am Al Amin Islam Rahat, A Professional
+                </h1>
                 <TypeAnimation
-                    sequence={[
-                        "Web Developer.",
-                        2000,
-                        "Web Designer.",
-                        2000,
-                    ]}
+                    sequence={["Web Developer.", 2000, "Web Designer.", 2000]}
                     wrapper="h1"
                     speed={50}
                     className="text-4xl text-orange-600 md:text-5xl lg:text-4xl font-extrabold mb-6 mx-2"
                     repeat={Infinity}
-                    render={(text) => {
-                        // Highlight specific words dynamically
-                        return text.split(" ").map((word, index) => {
-                            const isHighlighted =
-                                word.includes("Developer") || word.includes("Designer");
-
-                            return (
-                                <span
-                                    key={index}
-                                    className={isHighlighted ? "text-pink-500" : ""}
-                                >
-                                    {word}{" "}
-                                </span>
-                            );
-                        });
-                    }}
                 />
 
                 <p className="text-lg md:text-xl max-w-xl mb-8 leading-relaxed">
-                    I'm a passionate Frontend Web Developer with expertise in creating modern, responsive web applications.
-                    I specialize in React and Tailwind CSS, with strong experience in backend technologies like Express.js,
-                    Node.js, MongoDB, and Firebase for authentication. Let's collaborate to bring your ideas to life!
+                    I'm a passionate Frontend Web Developer with expertise in creating
+                    modern, responsive web applications. I specialize in React and
+                    Tailwind CSS, with strong experience in backend technologies like
+                    Express.js, Node.js, MongoDB, and Firebase for authentication. Let's
+                    collaborate to bring your ideas to life!
                 </p>
+
+                {/* Social Media Buttons */}
+                <div className="flex space-x-4 my-6">
+                    <a
+                        href="https://www.linkedin.com/in/al-amin-islam-rahat-418487312/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-500 hover:text-blue-700 text-3xl transition"
+                    >
+                        <FaLinkedin />
+                    </a>
+                    <a
+                        href="https://github.com/alaminislamrahat"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-300 hover:text-gray-500 text-3xl transition"
+                    >
+                        <FaGithub />
+                    </a>
+                    <a
+                        href="https://www.facebook.com/alaminislamrahat132"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-800 text-3xl transition"
+                    >
+                        <FaFacebook />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/al_amin_islam_rahat/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-pink-500 hover:text-pink-700 text-3xl transition"
+                    >
+                        <FaInstagram />
+                    </a>
+                </div>
+
                 <div className="flex space-x-4">
                     <button className="px-8 py-3 bg-orange-500 hover:bg-orange-800 text-white font-medium rounded-md shadow-lg transition-all">
                         Contact Me
@@ -65,6 +86,8 @@ const Hero = () => {
                         Download CV
                     </button>
                 </div>
+
+
             </motion.div>
 
             {/* Image Section */}
@@ -79,7 +102,6 @@ const Hero = () => {
                         src="https://i.ibb.co/2swLrnT/342f176b-e368-4274-91ad-f209c757e18f.jpg"
                         alt="Al Amin Islam Rahat"
                         className="w-full h-full object-cover"
-                      
                     />
                 </div>
             </motion.div>

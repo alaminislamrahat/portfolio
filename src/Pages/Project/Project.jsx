@@ -6,7 +6,7 @@ const ProjectList = () => {
     const [projectData, setProjectData] = useState([])
  useEffect(()=>{
     
-    fetch('./public/data.json')
+    fetch('data.json')
     .then(res => res.json())
     .then(data => {
         setProjectData(data)
@@ -15,11 +15,9 @@ const ProjectList = () => {
 
   return (
     <div className="min-h-screen  text-white py-10 px-5">
-      <h1 className="text-center text-4xl font-bold text-orange-500 mb-10">
-        Projects
-      </h1>
+       <h1 className="text-6xl text-center border-b-2 pb-7  border-orange-500 w-52 mx-auto font-bold text-orange-500 mb-8">Project</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projectData.map((project, index) => (
+        {projectData?.map((project, index) => (
           <Card
             key={index}
            project={project}

@@ -19,35 +19,36 @@ const Card = ({ project }) => {
         <p className="text-gray-400 text-sm mb-4">{description}</p>
 
         {/* Buttons */}
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           <a
             href={githubLink1}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-gray-700 rounded hover:bg-gray-600 transition"
+            className="flex items-center gap-2 px-3 py-2 bg-gray-700 rounded hover:bg-gray-600 transition md:px-4 md:py-2"
           >
             <FaGithub />
-            <span> Client</span>
+            <span className="text-sm md:text-base">Client</span>
           </a>
           <a
             href={githubLink2}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-gray-700 rounded hover:bg-gray-600 transition"
+            className="flex items-center gap-2 px-3 py-2 bg-gray-700 rounded hover:bg-gray-600 transition md:px-4 md:py-2"
           >
             <FaGithub />
-            <span> Server</span>
+            <span className="text-sm md:text-base">Server</span>
           </a>
           <a
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-400 transition"
+            className="flex items-center gap-2 px-3 py-2 bg-orange-500 text-white rounded hover:bg-orange-400 transition md:px-4 md:py-2"
           >
             <FaExternalLinkAlt />
-            <span> Live</span>
+            <span className="text-sm md:text-base">Live</span>
           </a>
         </div>
+
       </div>
     </div>
   );
